@@ -44,6 +44,10 @@ router.get('/:id', function (req, res, next) {
       {
         trait_type: 'Swag',
         value: Math.floor(random(id) * 100) + '%'
+      },
+      {
+        trait_type: 'X-Factor',
+        value: Math.floor(random(id) * 1000)
       }
     ]
   }
