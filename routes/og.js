@@ -58,10 +58,6 @@ router.get('/:id', function (req, res, next) {
       },
       {
         trait_type: 'Role',
-        value: 1
-      },
-      {
-        trait_type: 'Role',
         value: 'OG'
       },
       {
