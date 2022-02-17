@@ -28,6 +28,8 @@ router.get('/:id', function (req, res, next) {
     description:
       'A collective of 500 OGs helping grow DataX Protocol',
     image: 'https://gateway.pinata.cloud/ipfs/'+ process.env.IMAGE_CID,
+    external_url: "https://datax.fi",
+    animation_url:'https://gateway.pinata.cloud/ipfs/'+ process.env.IMAGE_CID,
     edition: 1,
     socials: {
       "website" :"https://datax.fi",
