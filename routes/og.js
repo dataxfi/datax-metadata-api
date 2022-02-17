@@ -40,7 +40,7 @@ router.get('/:id', function (req, res, next) {
     date: 1645000766360,
     attributes: [
       {
-        trait_type: 'rank',
+        trait_type: 'Rank',
         value: id,
       },
       {
@@ -50,7 +50,27 @@ router.get('/:id', function (req, res, next) {
       {
         trait_type: 'X-Factor',
         value: Math.floor(random(id + 1) * 1000)
-      }
+      },
+      {
+        trait_type: 'Level',
+        value: 1
+      },
+      {
+        trait_type: 'Role',
+        value: 1
+      },
+      {
+        trait_type: 'Role',
+        value: 'OG'
+      },
+      {
+        trait_type: 'City',
+        value: 'Datapolis'
+      },
+      {
+        trait_type: 'Generation',
+        value: 'X'
+      },
     ]
   }
   )
