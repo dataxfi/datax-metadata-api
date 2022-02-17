@@ -17,7 +17,7 @@ router.get('/:id', function (req, res, next) {
   }
 
   //maximum limit check
-  if (id > max) {
+  if (parseInt(id) > parseInt(max)) {
     res.status(404).json({ error: `Maximum ${max} OGs!` })
   }
 
