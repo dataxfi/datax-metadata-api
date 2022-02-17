@@ -26,7 +26,7 @@ router.get('/:id', function (req, res, next) {
   {
     name: 'DataX OG #'+ id,
     description:
-      'A collective of 500 OGs helping to build and govern Datapolis City and Data Nation powered by DataX Protocol ',
+      'A collective of 500 OGs helping to build and govern Datapolis City and Data Nation powered by DataX Protocol. ',
     image: 'https://gateway.pinata.cloud/ipfs/'+ process.env.IMAGE_CID,
     external_url: "https://datax.fi",
     animation_url:'https://gateway.pinata.cloud/ipfs/'+ process.env.IMAGE_CID,
@@ -40,6 +40,7 @@ router.get('/:id', function (req, res, next) {
     date: 1645000766360,
     attributes: [
       {
+        display_type: "number",
         trait_type: 'Rank',
         value: id,
       },
